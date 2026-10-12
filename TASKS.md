@@ -10,6 +10,10 @@
 - Style brief: bright soft premium 2D/2.5D, distinct silhouettes, kid-friendly animations. Design distinction: NO Creative Studio, character creator, room decorator or drawing mode; progress identical to four other games.
 - Audience / safety: children 5–12; privacy first, no targeted advertising; parental gate for links/purchases if offered.
 
+## REFERENCE-ADOPTION FINAL COMPLETENESS RULE
+- All newly numbered research-adoption tasks placed within owning milestones are REQUIRED FOR AUDIT unless explicitly marked optional AND disabled with owner-approved guard, or recorded as BLOCKED with a documented dependency. Historical M00/G00 first prompt files may predate expansion: use the newest Google Drive addendum and revise numbered scope prior to executing Codex. Never mark a milestone PASS based only on its older baseline checklist.
+- Original status/state authority stays with ChatGPT via this root TASKS.md. No user project is claimed implemented by planning updates. Engine ENG-M24 and Factory LFX-M14 remain required independent v1.0 gates before themed game production.
+
 ## Dependency and release gates
 - **NO branded-game code/assets or Codex implementation until** BOTH `Sekiph82/MATCH3_ENGINE` ENG-M24 final release audit PASS and `Sekiph82/Match3-Level-Factory` LFX-M14 final audit PASS, unless owner explicitly revises gate.
 - Keep Match3-SDK as shared Unity package via ENGINE. No second match algorithm, custom gravity or special-combination solver. All five games use identical level JSON/world/chapter/stars/tasks/economy/save/remote-update contracts.
@@ -228,7 +232,7 @@
 - [ ] **WOP-G12-010 Real package and production readiness** `PLANNED/GATED`. **Deliverable and acceptance:** Test real Android AAB/APK and iOS IPA, payments/ad flags, expected provider SDK inclusion/exclusion, TestFlight/Play internal tracks, R2 update and rollback; owner signs final ship gate. **Proof:** provider/version pin, positive/negative sandbox device tests, privacy/age assertions, SHA + GitHub commit, Drive Codex log/audit evidence and owner approval for production.
 - [ ] **WOP-G12-011 Optional modes and social flags** `PLANNED/GATED`. **Acceptance:** Timed/Endless, personal-best, achievements, eligible adult social/leaderboards remain explicit opt-in; children have no public ranks/chat or pressured modes. **Proof:** pin Engine/Factory exact versions, actual Unity editor/mobile tests with negative scenarios, original licensed art, redacted Google Drive evidence, independent audit and owner visual signoff when appropriate.
 - [ ] **WOP-G12-012 Monetization/identity negative-path proof** `PLANNED/GATED`. **Acceptance:** Test ad unavailable/skipped, IAP canceled/pending/restored/refunded, guest cloud conflict, consent deny, offline fallback; ensure child SDK disabled and UI never traps player. **Proof:** pin Engine/Factory exact versions, actual Unity editor/mobile tests with negative scenarios, original licensed art, redacted Google Drive evidence, independent audit and owner visual signoff when appropriate.
-**WOP-G12 closure:** all 10 tasks audited, permitted integrations demonstrated, child policy enforced, final store submission separately approved.
+**WOP-G12 closure:** all 12 tasks audited, permitted integrations demonstrated, child policy enforced, final store submission separately approved.
 
 ## Explicit not-in-scope
 - NO Creative Studio, character creator, room decorator or drawing mode; progress identical to four other games.
