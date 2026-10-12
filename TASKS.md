@@ -11,7 +11,7 @@
 - Audience / safety: children 5–12; privacy first, no targeted advertising; parental gate for links/purchases if offered.
 
 ## Dependency and release gates
-- **NO branded-game code/assets or Codex implementation until** BOTH `Sekiph82/MATCH3_ENGINE` ENG-M24 final release audit PASS and `Sekiph82/Match3-Level-Factory` LFX-M11 final audit PASS, unless owner explicitly revises gate.
+- **NO branded-game code/assets or Codex implementation until** BOTH `Sekiph82/MATCH3_ENGINE` ENG-M24 final release audit PASS and `Sekiph82/Match3-Level-Factory` LFX-M14 final audit PASS, unless owner explicitly revises gate.
 - Keep Match3-SDK as shared Unity package via ENGINE. No second match algorithm, custom gravity or special-combination solver. All five games use identical level JSON/world/chapter/stars/tasks/economy/save/remote-update contracts.
 - First 3 early-level intents are inspired by Daltonbr/Match3, whose repo does not currently establish permission for code/asset reuse. Independently create levels using our SDK-based runtime. Scene files are NOT imported.
 - Chapter/story milestones use shared abstract `ProgressAction`; theme-specific scene/character animations belong only in this repo.
@@ -190,7 +190,7 @@
 
 
 ### WOP-G12 | Commercial adapters, consent, store readiness and final ship gate
-**State: PLANNED / GATED. Prerequisites: ENGINE ENG-M24 PASS, Factory LFX-M11 PASS, and game G00–G11 independent sign-offs. Business accounts and money-bearing operations require owner authorization.**
+**State: PLANNED / GATED. Prerequisites: ENGINE ENG-M24 PASS, Factory LFX-M14 PASS, and game G00–G11 independent sign-offs. Business accounts and money-bearing operations require owner authorization.**
 
 - [ ] **WOP-G12-001 Store SDK configuration** `PLANNED/GATED`. **Deliverable and acceptance:** Create game-specific iOS/Android identifiers, store account mappings and SKU/product configuration; pinned optional commerce adapters only, not cloned motor. **Proof:** provider/version pin, positive/negative sandbox device tests, privacy/age assertions, SHA + GitHub commit, Drive Codex log/audit evidence and owner approval for production.
 - [ ] **WOP-G12-002 Monetization eligibility decision** `PLANNED/GATED`. **Deliverable and acceptance:** Children ages 5–12: ads, behavioral analytics, attribution and IAP offers default OFF. Apple Kids Category and Google Play Families privacy/ads policies control, not the adult adapters. **Proof:** provider/version pin, positive/negative sandbox device tests, privacy/age assertions, SHA + GitHub commit, Drive Codex log/audit evidence and owner approval for production.
