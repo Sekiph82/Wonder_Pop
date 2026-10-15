@@ -10,7 +10,7 @@
 - **ZERO TRUST FOR BUILDER TEST CLAIMS:** Codex output, "ALL PASS", a generated test summary, screenshots, self-authored evidence, and even a green CI status are CLAIMS, not proof by themselves. Independently inspect real GitHub source/diff and commit SHA, original test definitions and assertions, workflow configuration, actual CI run logs/artifact hashes, test discovery/count/skip/exit code and reproducibility. Challenge tautological mocks, disabled tests, misleading output, non-executed Unity tests, stale CI runs and tests that fail to exercise gameplay. Rerun independently in an available isolated toolchain when possible; otherwise record `NOT_INDEPENDENTLY_VERIFIED` with exact missing proof, and do not grant PASS for requirements depending on unavailable runtime/device execution. Only demonstrated criteria gain PASS; screenshots are corroboration, not standalone proof.
 - **AUDIT TRACEABILITY:** Freeze matching Drive criteria before Codex starts; compare every task requirement to the delivered implementation and adversarial positive/negative cases. Independently cross-check exact SHA + command/environment, repository branch, Unity version, provenance, coverage and actual artifact files. Full/partial test failure or inability to inspect necessary original evidence stays FAIL/BLOCKED/NOT_VERIFIED, never silently waived. ChatGPT's audit result lists its OWN inspection steps, what was independently reproduced, what could NOT be reproduced, and granular task findings before changing root TASKS.md.
 - **HANDOFF PRESENTATION:** All handoffs to owner must be copy-paste-ready plain-text code blocks with ONLY milestone name, exact task number range/list and Google Drive MASTER PROMPT URL, no additional commands or chatter inside block. Full requirements/log format and audit rubric reside in linked Drive documents.
-- **Release hygiene:** test code/asmdefs and small fixtures in GitHub, but test assemblies/fixtures/editor tools/logs/evidence never in player APK/AAB/IPA or Addressables. All 5 game repos remain gated until commercial ENGINE ENG-M24 and Factory LFX-M14 final PASS.
+- **Release hygiene:** test code/asmdefs and small fixtures in GitHub, but test assemblies/fixtures/editor tools/logs/evidence never in player APK/AAB/IPA or Addressables. All 5 game repos remain gated until ENGINE ENG-M24, Level Factory LFX-M14 and Visual-UI-Factory VUF-M11 independent PASS.
 
 > Created 2026-10-12. **All work initially PLANNED, no tests or audits performed.** Single canonical GitHub lifecycle tracker.
 
@@ -27,14 +27,14 @@
 
 ## REFERENCE-ADOPTION FINAL COMPLETENESS RULE
 - All newly numbered research-adoption tasks placed within owning milestones are REQUIRED FOR AUDIT unless explicitly marked optional AND disabled with owner-approved guard, or recorded as BLOCKED with a documented dependency. Historical M00/G00 first prompt files may predate expansion: use the newest Google Drive addendum and revise numbered scope prior to executing Codex. Never mark a milestone PASS based only on its older baseline checklist.
-- Original status/state authority stays with ChatGPT via this root TASKS.md. No user project is claimed implemented by planning updates. Engine ENG-M24 and Factory LFX-M14 remain required independent v1.0 gates before themed game production.
+- Original status/state authority stays with ChatGPT via this root TASKS.md. No user project is claimed implemented by planning updates. Engine ENG-M24, Level Factory LFX-M14 and Visual-UI-Factory VUF-M11 are all independent gates before themed game production.
 
 ## OWNER-LOCKED SEQUENTIAL REPOSITORY ORDER | GAMES THIRD | 2026-10-13
-**HARD GATE AND PROJECT ORDER:** First work EXCLUSIVELY in Sekiph82/MATCH3_ENGINE TASKS.md (complete ENG-M00..ENG-M24, each independently audited PASS). AFTER FULL ENGINE v1.0 PASS, work EXCLUSIVELY in Sekiph82/Match3-Level-Factory TASKS.md (complete LFX-M00..LFX-M14, each independently audited PASS). ONLY AFTER BOTH are fully finished and closed may this Wonder_Pop TASKS.md become executable, starting at WOP-G00 and proceeding through WOP-G12. No Engine/Factory alternating, no early title coding or content production, no unauthorized parallel task/prompts/checkout sync. The order among the five title repositories has NOT been fixed by the owner; they become individually eligible together after Factory LFX-M14 PASS.
-**BEFORE GAME START:** Verify actual ENG-M24 and LFX-M14 independent Drive audits, pin both compatible source versions and title GameProfile, and confirm Factory-produced content uses the Engine's exact authoritative rules. Until then all WOP-G00..G12 tasks remain PLANNED/GATED without fake PASS. This is an execution-order rule only: preserve all existing task IDs, scope, count, strict independent audit, Drive-only handoffs and Codex local/GitHub sync requirements.
+**HARD GATE AND PROJECT ORDER:** First work EXCLUSIVELY in Sekiph82/MATCH3_ENGINE TASKS.md (complete ENG-M00..ENG-M24, each independently audited PASS). AFTER FULL ENGINE v1.0 PASS, work EXCLUSIVELY in Sekiph82/Match3-Level-Factory TASKS.md (complete LFX-M00..LFX-M14, each independently audited PASS). THEN work EXCLUSIVELY in Sekiph82/MATCH3-Visual-UI-Factory TASKS.md (complete VUF-M00..VUF-M11, each independently audited PASS), producing modular original/licensed art assets and Unity templates outside the Engine. ONLY AFTER ALL THREE are fully finished and closed may this Wonder_Pop TASKS.md become executable, starting at WOP-G00 and proceeding through WOP-G12. No Engine/Factory alternating, no early title coding or content production, no unauthorized parallel task/prompts/checkout sync. The order among the five title repositories has NOT been fixed by the owner; they become individually eligible together after Factory LFX-M14 PASS.
+**BEFORE GAME START:** Verify actual ENG-M24, LFX-M14, VUF-M11 independent Drive audits, pin all three compatible source versions and title GameProfile, confirm LFX uses Engine authoritative rules and VUF exports visuals without modifying gameplay; final branded art and phone-screen signoffs belong to G01/G09/G11, not to Engine. Until then all WOP-G00..G12 tasks remain PLANNED/GATED without fake PASS. This is an execution-order rule only: preserve all existing task IDs, scope, count, strict independent audit, Drive-only handoffs and Codex local/GitHub sync requirements.
 
 ## Dependency and release gates
-- **NO branded-game code/assets or Codex implementation until** BOTH `Sekiph82/MATCH3_ENGINE` ENG-M24 final release audit PASS and `Sekiph82/Match3-Level-Factory` LFX-M14 final audit PASS, unless owner explicitly revises gate.
+- **NO branded-game code/assets or Codex implementation until** ALL THREE: `Sekiph82/MATCH3_ENGINE` ENG-M24, `Sekiph82/Match3-Level-Factory` LFX-M14, and `Sekiph82/MATCH3-Visual-UI-Factory` VUF-M11 final independent audits PASS, unless owner explicitly revises gate.
 - Keep Match3-SDK as shared Unity package via ENGINE. No second match algorithm, custom gravity or special-combination solver. All five games use identical level JSON/world/chapter/stars/tasks/economy/save/remote-update contracts.
 - First 3 early-level intents are inspired by Daltonbr/Match3, whose repo does not currently establish permission for code/asset reuse. Independently create levels using our SDK-based runtime. Scene files are NOT imported.
 - Chapter/story milestones use shared abstract `ProgressAction`; theme-specific scene/character animations belong only in this repo.
@@ -53,12 +53,12 @@
 - Audience/policy: Children 5-12: NO targeted ads/third-party behavioral telemetry/public social/pay-to-win packs; parental gating.
 - Match/gravity/specials/economy/collection/streak/chest/help/FTUE/events, five-persona validation and remote disable belong to shared Engine/Factory; NEVER copy game logic into this themed repo.
 - Licence: MIT libraries permitted only with required attribution/asset provenance; no copying Rimaethon noncommercial, thefcan unlicensed or Unity sample code beyond explicit license permission. Original art must be approved.
-- Optional P2 modes remain feature flagged OFF until owner signs; game work GATED on audited Engine ENG-M24 plus Factory LFX-M14. New tasks all PLANNED/GATED; no implementation or visual production claimed.
+- Optional P2 modes remain feature flagged OFF until owner signs; game work GATED on audited Engine ENG-M24, Factory LFX-M14 and Visual-UI-Factory VUF-M11. New tasks all PLANNED/GATED; no implementation or visual production claimed.
 
 ## Milestone/task inventory
 
 ### WOP-G00 | Gate checks, standalone Unity bootstrap and dependency contract
-**State: PLANNED / GATED by engine + factory release. Closure requires independent ChatGPT audit and evidence in Drive.**
+**State: PLANNED / GATED by Engine ENG-M24 + LevelFactory LFX-M14 + Visual-UI-Factory VUF-M11 independent releases. Closure requires independent ChatGPT audit and evidence in Drive.**
 
 - [ ] **WOP-G00-001 Verify prerequisite releases** `PLANNED/GATED`. **Implementation deliverable:** Confirm ENGINE v1.0 and Factory v1.0 independently audited PASS; no game-specific implementation before both proofs.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 - [ ] **WOP-G00-002 Pin dependency revisions** `PLANNED/GATED`. **Implementation deliverable:** Lock engine Git UPM package version/commit, level schema version and tooling releases, with rollback instructions.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
@@ -72,9 +72,9 @@
 **Gate WOP-G00:** All child tasks independently audited, all findings resolved and owner visuals approved where requested.
 
 ### WOP-G01 | Art direction, identity and licensed asset production
-**State: PLANNED / GATED by engine + factory release. Closure requires independent ChatGPT audit and evidence in Drive.**
+**State: PLANNED / GATED by Engine ENG-M24 + LevelFactory LFX-M14 + Visual-UI-Factory VUF-M11 independent releases. Closure requires independent ChatGPT audit and evidence in Drive.**
 
-- [ ] **WOP-G01-001 Approve visual bible** `PLANNED/GATED`. **Implementation deliverable:** Define premium 2D/2.5D style, portrait UI, typography, accessibility, palette and reusable icon geometry.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
+- [ ] **WOP-G01-001 Approve VUF-version-pinned visual bible and final original/licensed game art** `PLANNED/GATED`. **Implementation deliverable:** Define premium 2D/2.5D style, portrait UI, typography, accessibility, palette and reusable icon geometry.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 - [ ] **WOP-G01-002 Piece silhouettes** `PLANNED/GATED`. **Implementation deliverable:** Design 6 primary game pieces with distinct shapes/patterns, 1x/2x/3x export strategy and pixel alignment.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 - [ ] **WOP-G01-003 Special piece skin matrix** `PLANNED/GATED`. **Implementation deliverable:** Provide horizontal/vertical rocket, area bomb, color clearer and every combo visual binding without code changes.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 - [ ] **WOP-G01-004 Obstacle skin atlas** `PLANNED/GATED`. **Implementation deliverable:** Art for each engine obstacle state: intact/damaged/broken, immobilizer, spreader and collector.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
@@ -88,7 +88,7 @@
 **Gate WOP-G01:** All child tasks independently audited, all findings resolved and owner visuals approved where requested.
 
 ### WOP-G02 | Shared presentation adapters, branded UI and effects
-**State: PLANNED / GATED by engine + factory release. Closure requires independent ChatGPT audit and evidence in Drive.**
+**State: PLANNED / GATED by Engine ENG-M24 + LevelFactory LFX-M14 + Visual-UI-Factory VUF-M11 independent releases. Closure requires independent ChatGPT audit and evidence in Drive.**
 
 - [ ] **WOP-G02-001 Skin all common screens** `PLANNED/GATED`. **Implementation deliverable:** Home, World Map, Chapter, Level HUD, Pause, Win, Lose, Settings, Shop, Tasks and Daily use engine UI APIs.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 - [ ] **WOP-G02-002 Board style binding** `PLANNED/GATED`. **Implementation deliverable:** Map generic logical piece IDs to title sprites/atlases; engine state independent of art.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
@@ -103,7 +103,7 @@
 **Gate WOP-G02:** All child tasks independently audited, all findings resolved and owner visuals approved where requested.
 
 ### WOP-G03 | First four levels, tutorial and Daltonbr inspiration
-**State: PLANNED / GATED by engine + factory release. Closure requires independent ChatGPT audit and evidence in Drive.**
+**State: PLANNED / GATED by Engine ENG-M24 + LevelFactory LFX-M14 + Visual-UI-Factory VUF-M11 independent releases. Closure requires independent ChatGPT audit and evidence in Drive.**
 
 - [ ] **WOP-G03-001 Document first 3 reference objectives** `PLANNED/GATED`. **Implementation deliverable:** Review Daltonbr Level01–03 as mechanics inspiration without copying protected C# scenes or assets.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 - [ ] **WOP-G03-002 Level 1 tutorial** `PLANNED/GATED`. **Implementation deliverable:** Guided 3-match swap with intuitive visual hand/pointer and valid move list.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
@@ -117,7 +117,7 @@
 **Gate WOP-G03:** All child tasks independently audited, all findings resolved and owner visuals approved where requested.
 
 ### WOP-G04 | Worlds, chapters, map and unlock progression
-**State: PLANNED / GATED by engine + factory release. Closure requires independent ChatGPT audit and evidence in Drive.**
+**State: PLANNED / GATED by Engine ENG-M24 + LevelFactory LFX-M14 + Visual-UI-Factory VUF-M11 independent releases. Closure requires independent ChatGPT audit and evidence in Drive.**
 
 - [ ] **WOP-G04-001 World plan** `PLANNED/GATED`. **Implementation deliverable:** Define 6 initial world chapters with names, distinct scenery and story beats.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 - [ ] **WOP-G04-002 Shared map contract** `PLANNED/GATED`. **Implementation deliverable:** Use exactly same engine world/chapter/level graph, 1–3 stars, unlock rules and navigation as other games.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
@@ -133,7 +133,7 @@
 **Gate WOP-G04:** All child tasks independently audited, all findings resolved and owner visuals approved where requested.
 
 ### WOP-G05 | Production levels and Factory QA
-**State: PLANNED / GATED by engine + factory release. Closure requires independent ChatGPT audit and evidence in Drive.**
+**State: PLANNED / GATED by Engine ENG-M24 + LevelFactory LFX-M14 + Visual-UI-Factory VUF-M11 independent releases. Closure requires independent ChatGPT audit and evidence in Drive.**
 
 - [ ] **WOP-G05-001 Level design standards** `PLANNED/GATED`. **Implementation deliverable:** Set game-specific moves, goals, obstacle adoption and early/mid/late difficulty progression.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 - [ ] **WOP-G05-002 Levels 1–25** `PLANNED/GATED`. **Implementation deliverable:** Produce first world candidate set in Factory, playtest, reject unfair RNG and verify goals.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
@@ -147,7 +147,7 @@
 **Gate WOP-G05:** All child tasks independently audited, all findings resolved and owner visuals approved where requested.
 
 ### WOP-G06 | Unique gameplay flavor with no rule fork
-**State: PLANNED / GATED by engine + factory release. Closure requires independent ChatGPT audit and evidence in Drive.**
+**State: PLANNED / GATED by Engine ENG-M24 + LevelFactory LFX-M14 + Visual-UI-Factory VUF-M11 independent releases. Closure requires independent ChatGPT audit and evidence in Drive.**
 
 - [ ] **WOP-G06-001 Unique obstacle skin/behavior mapping** `PLANNED/GATED`. **Implementation deliverable:** Use existing engine neutral obstacle capabilities; custom gameplay only through approved engine extension API.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 - [ ] **WOP-G06-002 Unique booster skin mapping** `PLANNED/GATED`. **Implementation deliverable:** Bind game boosters to shared mechanic IDs and atomic inventory spend.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
@@ -162,7 +162,7 @@
 **Gate WOP-G06:** All child tasks independently audited, all findings resolved and owner visuals approved where requested.
 
 ### WOP-G07 | Shared economy, daily content and chapter rewards
-**State: PLANNED / GATED by engine + factory release. Closure requires independent ChatGPT audit and evidence in Drive.**
+**State: PLANNED / GATED by Engine ENG-M24 + LevelFactory LFX-M14 + Visual-UI-Factory VUF-M11 independent releases. Closure requires independent ChatGPT audit and evidence in Drive.**
 
 - [ ] **WOP-G07-001 Economy profile** `PLANNED/GATED`. **Implementation deliverable:** Set coin earning/spending ranges and booster charges using engine policy profiles.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 - [ ] **WOP-G07-002 Hearts/lives** `PLANNED/GATED`. **Implementation deliverable:** Apply shared regeneration, maximum hearts, clock-rollback and background state handling.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
@@ -179,7 +179,7 @@
 **Gate WOP-G07:** All child tasks independently audited, all findings resolved and owner visuals approved where requested.
 
 ### WOP-G08 | Remote updates and release-content independence
-**State: PLANNED / GATED by engine + factory release. Closure requires independent ChatGPT audit and evidence in Drive.**
+**State: PLANNED / GATED by Engine ENG-M24 + LevelFactory LFX-M14 + Visual-UI-Factory VUF-M11 independent releases. Closure requires independent ChatGPT audit and evidence in Drive.**
 
 - [ ] **WOP-G08-001 Production namespace** `PLANNED/GATED`. **Implementation deliverable:** Game-specific R2/channel paths with signing manifest and no shared level data across titles.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 - [ ] **WOP-G08-002 Bundled starter set** `PLANNED/GATED`. **Implementation deliverable:** Include independently approved first four levels and offline fallback assets.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
@@ -193,7 +193,7 @@
 **Gate WOP-G08:** All child tasks independently audited, all findings resolved and owner visuals approved where requested.
 
 ### WOP-G09 | Language, accessibility, privacy and child-safe profiles
-**State: PLANNED / GATED by engine + factory release. Closure requires independent ChatGPT audit and evidence in Drive.**
+**State: PLANNED / GATED by Engine ENG-M24 + LevelFactory LFX-M14 + Visual-UI-Factory VUF-M11 independent releases. Closure requires independent ChatGPT audit and evidence in Drive.**
 
 - [ ] **WOP-G09-001 Visual legibility** `PLANNED/GATED`. **Implementation deliverable:** Colorblind shapes, contrast, text scale, safe touch sizes and low-end device clarity.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 - [ ] **WOP-G09-002 English/Turkish content** `PLANNED/GATED`. **Implementation deliverable:** Localization of goals, tutorial, progress, settings, dialogue and rewards.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
@@ -207,7 +207,7 @@
 **Gate WOP-G09:** All child tasks independently audited, all findings resolved and owner visuals approved where requested.
 
 ### WOP-G10 | Platform performance and build delivery
-**State: PLANNED / GATED by engine + factory release. Closure requires independent ChatGPT audit and evidence in Drive.**
+**State: PLANNED / GATED by Engine ENG-M24 + LevelFactory LFX-M14 + Visual-UI-Factory VUF-M11 independent releases. Closure requires independent ChatGPT audit and evidence in Drive.**
 
 - [ ] **WOP-G10-001 Android toolchain** `PLANNED/GATED`. **Implementation deliverable:** Unity Android Build Support, SDK/NDK/JDK compatibility and clean package smoke.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 - [ ] **WOP-G10-002 iOS build path** `PLANNED/GATED`. **Implementation deliverable:** Unity iOS Build Support and Xcode/macOS signing plan without secrets in Git.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
@@ -222,7 +222,7 @@
 **Gate WOP-G10:** All child tasks independently audited, all findings resolved and owner visuals approved where requested.
 
 ### WOP-G11 | Store submission rehearsal and first content season
-**State: PLANNED / GATED by engine + factory release. Closure requires independent ChatGPT audit and evidence in Drive.**
+**State: PLANNED / GATED by Engine ENG-M24 + LevelFactory LFX-M14 + Visual-UI-Factory VUF-M11 independent releases. Closure requires independent ChatGPT audit and evidence in Drive.**
 
 - [ ] **WOP-G11-001 Independent legal signoff** `PLANNED/GATED`. **Implementation deliverable:** Original/cleared brand art, sounds, fonts, terms, credits and SDK attribution.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 - [ ] **WOP-G11-002 Store identity** `PLANNED/GATED`. **Implementation deliverable:** Unique package/bundle IDs, icon/splash/screenshots, game-specific descriptions and age declaration.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
