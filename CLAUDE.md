@@ -1,4 +1,9 @@
 # Wonder Pop | Claude Code owner instruction
+
+## Owner audience decision | 2026-11-10
+
+Wonder Pop now targets a **general/family-friendly audience like the other four Match3 games**, NOT a children-only ages 5–12 category. Keep the original colorful picturebook identity. Optional Time Attack/Endless modes no longer require a special owner age-target decision solely because of the superseded age 5–12 brief; original Engine capabilities, product quality, independent QA and release gates remain. This does not authorize ads, telemetry, IAP, public chat or bypass actual platform/minor privacy requirements. Consult the latest root TASKS.md decision. Cross-project Engine business profiles and the Master Orchestrator must use this updated target.
+
 ## Owner authority effective 2026-11-10
 Claude Code is the ONLY AI executor for code, tests, fixes, GitHub publication, TASKS.md maintenance, and independent review through a different read-only Claude agent/session. All historical Codex and ChatGPT execution/audit duties are retired. Owner decisions remain supreme.
 
