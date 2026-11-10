@@ -1,5 +1,16 @@
 # Wonder_Pop | MASTER TASKS.md
 
+## ACTIVE OWNER OVERRIDE | CLAUDE-ONLY + CENTRAL ORCHESTRATOR | 2026-11-10
+
+**Latest owner directive:** Claude Code is the **sole authorized AI implementer, reviewer (independent session), task tracker maintainer, tester and reporter** for this game. The cross-project task manager is `Sekiph82/MATCH3-MASTER-ORCHESTRATOR`. It delegates to the Wonder Pop specialist and coordinates dependencies with Engine, Level Factory, Visual Factory and all five games. Owner retains final authority.
+
+- Old Codex developer, ChatGPT author/reviewer, per-task master prompt and task baton assignments below are historical, superseded **only for execution actors and routine handoff scheduling**. Technical requirements, frozen acceptance criteria, independent audit, original evidence, cost/rights/safety policies and milestone gates are fully preserved.
+- **Root TASKS.md remains the only authoritative game task ledger.** Preserve all existing task IDs, checkboxes, status and history. A separate read-only Claude reviewer must check actual evidence before PASS; no self-certified acceptance. Keep genuinely blocked criteria BLOCKED/NOT_VERIFIED.
+- Master orchestrator claims/assigns tasks, prevents overlapping agents, orders upstream and game work, receives exact commit/test/evidence reports and updates cross-repo dependencies. Do not autonomously modify another repository without its task delegation.
+- No GitHub Actions or paid CI, unauthorized cloud/device costs, destructive reset/clean, force-push, overwrite of owner-local changes, monetization/store action, release or fabricated Unity/native verification. Engine ENG-M24, LFX-M14 and VUF-M11 release gates remain.
+- Read `CLAUDE.md` and this whole `TASKS.md`; avoid stale Codex scheduling or ChatGPT audit workflow language below. Any already-running external Codex automation must be stopped outside GitHub.
+
+
 ## PERSISTENT OWNER WORKFLOW RULE | MASTER MILESTONE / DRIVE HANDOFF | 2026-10-12
 - **Primary goal:** finish robust, fast, Unity-6.6-compatible, runnable code with minimal new implementation. Search for mature reusable source/components first; pin released commits/tags; adopt only needed functions/adapters. Do not rewrite a stable existing solution simply for novelty. Prefer tested permissive licensed MIT/BSD/Apache code with retained notices, but verify LICENSE and per-file asset/dependency rights; visible GitHub source with no license is NOT automatically reusable. Commercially restricted / CC BY-NC-ND projects are behavior references only, to be independently implemented.
 - **ONE MASTER HANDOFF PER MILESTONE:** ChatGPT prepares a versioned implementation prompt and an independent master audit rubric in Google Drive, PLUS separately titled PROMPT and AUDIT CRITERIA for EACH numbered subtask, before Codex begins. Master prompt enumerates and links all children and demands continuous implementation within that milestone without waiting for approval between successful children. Failure/blocker protocols remain mandatory.
